@@ -9,4 +9,6 @@ inputs:
 - name: hello-world
 
 run:
-  path: hello-world/hello_world.py
+  path: python
+  args: 
+  - "hello-world/hello_world.py"
