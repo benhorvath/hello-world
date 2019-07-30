@@ -1,0 +1,13 @@
+resources:
+- name: hello-world
+  type: git
+  source:
+    uri: https://github.com/benhorvath/hello-world.git
+    branch: master
+
+jobs:
+- name: hello-world
+  plan:
+    - get: hello-world
+    - task: hello-world-task
+      file: hello-world/hello-world-task.yml
