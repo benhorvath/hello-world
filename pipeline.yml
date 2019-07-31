@@ -16,6 +16,7 @@ jobs:
   plan:
     - task: create-file-task
       config:
+        platform: linux
         run:
           path: bash
           args:
