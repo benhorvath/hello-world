@@ -9,5 +9,17 @@ jobs:
 - name: hello-world
   plan:
     - get: hello-world
+      trigger: true
     - task: hello-world-task
       file: hello-world/hello-world-task.yml
+- name: create-file
+  plan:
+    - task: create-file-task
+      config:
+        run:
+          path: bash
+          args:
+            - echo "Created a file on $(date)" > ./files/created_file
+        outputs:
+            - name: files
+
