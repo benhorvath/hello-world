@@ -12,8 +12,6 @@ jobs:
       trigger: true
     - task: hello-world-task
       file: hello-world/hello-world-task.yml
-- name: create-file
-  plan:
     - task: create-file-task
       config:
         platform: linux
