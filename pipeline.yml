@@ -15,6 +15,9 @@ jobs:
     - task: create-file-task
       config:
         platform: linux
+        image_resource:
+          type: registry-image
+          source: { repository: busybox }
         run:
           path: bash
           args:
