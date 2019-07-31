@@ -23,5 +23,5 @@ jobs:
         run:
           path: sh
           args:
-            - echo "Created a file on $(date)" > ./files/created_file
+            - ls -lha "Created a file on $(date)" > ./files/created_file
 
