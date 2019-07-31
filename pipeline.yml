@@ -18,10 +18,10 @@ jobs:
         image_resource:
           type: registry-image
           source: { repository: busybox }
+        outputs:
+        - name: files
         run:
           path: sh
           args:
             - echo "Created a file on $(date)" > ./files/created_file
-        outputs:
-            - name: files
 
