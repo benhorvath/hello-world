@@ -14,6 +14,7 @@ jobs:
       file: hello-world/hello-world-task.yml
     - task: create-file-task
       config:
+        platform: linux
         run:
           path: bash
           args:
