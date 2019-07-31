@@ -19,7 +19,7 @@ jobs:
           type: registry-image
           source: { repository: busybox }
         run:
-          path: bash
+          path: sh
           args:
             - echo "Created a file on $(date)" > ./files/created_file
         outputs:
