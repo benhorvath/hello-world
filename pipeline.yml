@@ -23,5 +23,6 @@ jobs:
         run:
           path: sh
           args:
-            - -c 'ls -lha'
+            - -c 
+            - 'ls -lha'
 
