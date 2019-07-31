@@ -21,7 +21,5 @@ jobs:
         outputs:
         - name: files
         run:
-          path: sh
-          args:
-            - ls -lha
+          path: ls -lha
 
